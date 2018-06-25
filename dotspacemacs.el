@@ -36,6 +36,10 @@
      helm
      html
      javascript
+     latex
+     (latex :variables latex-build-command "LaTeX")
+     (latex :variables latex-enable-auto-fill t)
+     (latex :variables latex-enable-folding t)
      markdown
      org
      osx
