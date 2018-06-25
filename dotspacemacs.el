@@ -15,9 +15,9 @@
    ;; list of configuration layers
    dotspacemacs-configuration-layers
    '(
-     helm
      ;; auto-completion
      ;; better-defaults
+     helm
      emacs-lisp
      git
      ;; markdown
