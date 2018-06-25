@@ -20,7 +20,7 @@
      helm
      emacs-lisp
      git
-     ;; markdown
+     markdown
      org
      osx
      shell
