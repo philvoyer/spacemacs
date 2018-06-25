@@ -26,6 +26,7 @@
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      (c-c++ :variables c-c++-enable-clang-support t)
      (c-c++ :variables c-c++-enable-rtags-support t)
+     csharp
      clojure
      colors
      (colors :variables colors-enable-nyan-cat-progress-bar t)
