@@ -15,7 +15,12 @@
    ;; list of configuration layers
    dotspacemacs-configuration-layers
    '(
-     ;; auto-completion
+     auto-completion
+     (auto-completion :variables auto-completion-return-key-behavior 'complete)
+     (auto-completion :variables auto-completion-tab-key-behavior 'cycle)
+     (auto-completion :variables auto-completion-complete-with-key-sequence nil)
+     (auto-completion :variables auto-completion-complete-with-key-sequence-delay 0.1)
+     (auto-completion :variables auto-completion-private-snippets-directory nil)
      ;; better-defaults
      helm
      emacs-lisp
