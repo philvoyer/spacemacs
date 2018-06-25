@@ -78,74 +78,57 @@
 
   ;; list of all spacemacs settings
   (setq-default
+
    ;; contact ELPA repositories via HTTPS
    dotspacemacs-elpa-https t
 
    ;; contact an ELPA repository timout
    dotspacemacs-elpa-timeout 5
 
-   ;; If non nil then spacemacs will check for updates at startup
-   ;; when the current branch is not `develop'. Note that checking for
-   ;; new versions works via git commands, thus it calls GitHub services
-   ;; whenever you start Emacs. (default nil)
+   ;; check for updates at startup
    dotspacemacs-check-for-update nil
 
-   ;; If non-nil, a form that evaluates to a package directory. For example, to
-   ;; use different package directories for different Emacs versions, set this
-   ;; to `emacs-version'.
-
+   ;; use package subdirectory
    dotspacemacs-elpa-subdirectory nil
 
-   ;; One of `vim', `emacs' or `hybrid'.
-   ;; `hybrid' is like `vim' except that `insert state' is replaced by the
-   ;; `hybrid state' with `emacs' key bindings. The value can also be a list
-   ;; with `:variables' keyword (similar to layers). Check the editing styles
-   ;; section of the documentation for details on available variables.
-   ;; (default 'vim)
+   ;; editing style
    dotspacemacs-editing-style 'vim
 
-   ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
+   ;; output loading progress in `*Messages*' buffer
    dotspacemacs-verbose-loading nil
 
-   ;; Specify the startup banner. Default value is `official', it displays
-   ;; the official spacemacs logo. An integer value is the index of text
-   ;; banner, `random' chooses a random text banner in `core/banners'
-   ;; directory. A string value must be a path to an image format supported
-   ;; by your Emacs build.
-   ;; If the value is nil then no banner is displayed. (default 'official)
+   ;; startup banner
    dotspacemacs-startup-banner 'official
 
-   ;; List of items to show in startup buffer or an association list of
-   ;; the form `(list-type . list-size)`. If nil then it is disabled.
-   ;; Possible values for list-type are:
+   ;; list of items to show in startup buffer
+   ;; possible values for list-type are:
    ;; `recents' `bookmarks' `projects' `agenda' `todos'."
-   ;; List sizes may be nil, in which case
-   ;; `spacemacs-buffer-startup-lists-length' takes effect.
-   dotspacemacs-startup-lists '((recents . 5)
-                                (projects . 7))
-   ;; True if the home buffer should respond to resize events.
+   dotspacemacs-startup-lists '((recents . 10)
+                                (projects . 5)
+                                (bookmarks . 5)
+                                (todos . 5)
+                                (agenda . 5))
+
+   ;; home buffer should respond to resize events.
    dotspacemacs-startup-buffer-responsive t
 
-   ;; Default major mode of the scratch buffer (default `text-mode')
+   ;; default major mode of the scratch buffer
    dotspacemacs-scratch-mode 'text-mode
 
-   ;; List of themes, the first of the list is loaded when spacemacs starts.
-   ;; Press <SPC> T n to cycle to the next theme in the list (works great
-   ;; with 2 themes variants, one dark and one light)
+   ;; list of themes, the first of the list is loaded when spacemacs starts.
    dotspacemacs-themes '(spacemacs-dark
                          spacemacs-light)
 
-   ;; If non nil the cursor color matches the state color in GUI Emacs.
+   ;; cursor color matches the state color
    dotspacemacs-colorize-cursor-according-to-state t
 
-   ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
-   ;; quickly tweak the mode-line size to make separators look not too crappy.
+   ;; default font, or prioritized list of fonts
    dotspacemacs-default-font '("Source Code Pro"
                                :size 13
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
-   ;; The leader key
+   ;; leader key
    dotspacemacs-leader-key "SPC"
 
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
