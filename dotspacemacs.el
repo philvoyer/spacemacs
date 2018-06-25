@@ -21,7 +21,7 @@
      (auto-completion :variables auto-completion-complete-with-key-sequence nil)
      (auto-completion :variables auto-completion-complete-with-key-sequence-delay 0.1)
      (auto-completion :variables auto-completion-private-snippets-directory nil)
-     ;; better-defaults
+     better-defaults
      c-c++
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      (c-c++ :variables c-c++-enable-clang-support t)
