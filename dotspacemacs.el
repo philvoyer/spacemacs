@@ -131,31 +131,22 @@
    ;; leader key
    dotspacemacs-leader-key "SPC"
 
-   ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
-   ;; (default "SPC")
+   ;; emacs commands (M-x) (after pressing on the leader key).
    dotspacemacs-emacs-command-key "SPC"
 
-   ;; The key used for Vim Ex commands (default ":")
+   ;; vim ex commands (default ":")
    dotspacemacs-ex-command-key ":"
 
-   ;; The leader key accessible in `emacs state' and `insert state'
-   ;; (default "M-m")
+   ;; leader key in `emacs state' and `insert state'
    dotspacemacs-emacs-leader-key "M-m"
 
-   ;; Major mode leader key is a shortcut key which is the equivalent of
-   ;; pressing `<leader> m`. Set it to `nil` to disable it. (default ",")
+   ;; major mode leader key (equivalent of pressing `<leader> m`)
    dotspacemacs-major-mode-leader-key ","
 
-   ;; Major mode leader key accessible in `emacs state' and `insert state'.
-   ;; (default "C-M-m")
+   ;; major mode leader key in `emacs state' and `insert state'
    dotspacemacs-major-mode-emacs-leader-key "C-M-m"
 
-   ;; These variables control whether separate commands are bound in the GUI to
-   ;; the key pairs C-i, TAB and C-m, RET.
-   ;; Setting it to a non-nil value, allows for separate commands under <C-i>
-   ;; and TAB or <C-m> and RET.
-   ;; In the terminal, these pairs are generally indistinguishable, so this only
-   ;; works in the GUI. (default nil)
+   ;; same command for the key pairs C-i, TAB, C-m, and RET
    dotspacemacs-distinguish-gui-tab nil
 
    ;; If non nil `Y' is remapped to `y$' in Evil states. (default nil)
@@ -166,22 +157,19 @@
    dotspacemacs-retain-visual-state-on-shift t
 
    ;; If non-nil, J and K move lines up and down when in visual mode.
-   ;; (default nil)
    dotspacemacs-visual-line-move-text nil
 
    ;; If non nil, inverse the meaning of `g' in `:substitute' Evil ex-command.
-   ;; (default nil)
    dotspacemacs-ex-substitute-global nil
 
    ;; Name of the default layout (default "Default")
-   dotspacemacs-default-layout-name "Default"
+   dotspacemacs-default-layout-name "default"
 
    ;; If non nil the default layout name is displayed in the mode-line.
-   ;; (default nil)
    dotspacemacs-display-default-layout nil
 
    ;; If non nil then the last auto saved layouts are resume automatically upon
-   ;; start. (default nil)
+   ;; start.
    dotspacemacs-auto-resume-layouts nil
 
    ;; Size (in MB) above which spacemacs will prompt to open the large file
@@ -202,7 +190,6 @@
    dotspacemacs-helm-resize nil
 
    ;; if non nil, the helm header is hidden when there is only one source.
-   ;; (default nil)
    dotspacemacs-helm-no-header nil
 
    ;; define the position to display `helm', options are `bottom', `top',
@@ -236,7 +223,7 @@
 
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup nil
+   dotspacemacs-fullscreen-at-startup t
 
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
