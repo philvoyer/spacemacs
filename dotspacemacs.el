@@ -52,7 +52,9 @@
      (shell :variables shell-default-full-span nil)
      ;; spell-checking
      ;; syntax-checking
-     ;; version-control
+     version-control
+     (version-control :variables version-control-diff-tool 'diff-hl)
+     (version-control :variables version-control-global-margin t)
      )
 
    ;; additional packages
