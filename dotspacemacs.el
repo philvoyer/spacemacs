@@ -43,6 +43,7 @@
      markdown
      org
      osx
+     python
      shell
      (shell :variables shell-default-shell 'eshell)
      (shell :variables shell-default-position 'bottom)
