@@ -23,9 +23,12 @@
      ;; markdown
      ;; org
      osx
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     shell
+     (shell :variables shell-default-shell 'eshell)
+     (shell :variables shell-default-position 'bottom)
+     (shell :variables shell-default-width 20)
+     (shell :variables shell-default-height 20)
+     (shell :variables shell-default-full-span nil)
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
