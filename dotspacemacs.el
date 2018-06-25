@@ -22,6 +22,10 @@
      (auto-completion :variables auto-completion-complete-with-key-sequence-delay 0.1)
      (auto-completion :variables auto-completion-private-snippets-directory nil)
      ;; better-defaults
+     c-c++
+     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
+     (c-c++ :variables c-c++-enable-clang-support t)
+     (c-c++ :variables c-c++-enable-rtags-support t)
      colors
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      (colors :variables colors-colorize-identifiers 'variables)
