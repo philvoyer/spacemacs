@@ -22,6 +22,9 @@
      (auto-completion :variables auto-completion-complete-with-key-sequence-delay 0.1)
      (auto-completion :variables auto-completion-private-snippets-directory nil)
      ;; better-defaults
+     colors
+     (colors :variables colors-enable-nyan-cat-progress-bar t)
+     (colors :variables colors-colorize-identifiers 'variables)
      helm
      emacs-lisp
      git
