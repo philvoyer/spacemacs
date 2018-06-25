@@ -29,7 +29,7 @@
      clojure
      colors
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     (colors :variables colors-colorize-identifiers 'variables)
+     (colors :variables colors-colorize-identifiers 'all)
      csharp
      emacs-lisp
      git
