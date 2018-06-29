@@ -177,13 +177,10 @@
    ;; no major mode or minor modes are active. (default is 1)
    dotspacemacs-large-file-size 1
 
-   ;; Location where to auto-save files. Possible values are `original' to
-   ;; auto-save the file in-place, `cache' to auto-save the file to another
-   ;; file stored in the cache directory and `nil' to disable auto-saving.
-   ;; (default 'cache)
-   dotspacemacs-auto-save-file-location 'cache
+   ;; auto-save file location
+   dotspacemacs-auto-save-file-location 'original
 
-   ;; Maximum number of rollback slots to keep in the cache. (default 5)
+   ;; maximum number of rollback slots
    dotspacemacs-max-rollback-slots 5
 
    ;; If non nil, `helm' will try to minimize the space it uses. (default nil)
