@@ -94,7 +94,7 @@
    ;; editing style
    dotspacemacs-editing-style 'vim
 
-   ;; output loading progress in `*Messages*' buffer
+   ;; output loading progress in `*messages*' buffer
    dotspacemacs-verbose-loading nil
 
    ;; startup banner
@@ -149,7 +149,7 @@
    ;; same command for the key pairs C-i, TAB, C-m, and RET
    dotspacemacs-distinguish-gui-tab nil
 
-   ;; If non nil `Y' is remapped to `y$' in Evil states. (default nil)
+   ;; If non nil `Y' is remapped to `y$' in evil states. (default nil)
    dotspacemacs-remap-Y-to-y$ nil
 
    ;; If non-nil, the shift mappings `<' and `>' retain visual state if used
@@ -159,7 +159,7 @@
    ;; If non-nil, J and K move lines up and down when in visual mode.
    dotspacemacs-visual-line-move-text nil
 
-   ;; If non nil, inverse the meaning of `g' in `:substitute' Evil ex-command.
+   ;; If non nil, inverse the meaning of `g' in `:substitute' evil ex-command.
    dotspacemacs-ex-substitute-global nil
 
    ;; Name of the default layout (default "Default")
@@ -262,18 +262,13 @@
    ;; code folding method
    dotspacemacs-folding-method 'evil
 
-   ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
-   ;; (default nil)
-   dotspacemacs-smartparens-strict-mode nil
+   ;; smartparens-strict-mode enabled in programming modes
+   dotspacemacs-smartparens-strict-mode t
 
-   ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
-   ;; over any automatically added closing parenthesis, bracket, quote, etc…
-   ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)
-   dotspacemacs-smart-closing-parenthesis nil
+   ;; pressing `)' key in insert mode passes over automatically added delimiters
+   dotspacemacs-smart-closing-parenthesis t
 
-   ;; Select a scope to highlight delimiters. Possible values are `any',
-   ;; `current', `all' or `nil'. Default is `all' (highlight any scope and
-   ;; emphasis the current one). (default 'all)
+   ;; highlight delimiters
    dotspacemacs-highlight-delimiters 'all
 
    ;; keep server open when quitting.
@@ -282,14 +277,13 @@
    ;; list of search tool executable names
    dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
 
-   ;; The default package repository used if no explicit repository has been
-   ;; specified with an installed package.
-   ;; Not used for now. (default nil)
+   ;; default package repository
    dotspacemacs-default-package-repository nil
 
    ;; delete whitespace while saving buffer
    dotspacemacs-whitespace-cleanup 'trailing
-   ))
+   )
+  )
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
