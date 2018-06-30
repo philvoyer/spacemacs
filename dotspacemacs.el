@@ -149,14 +149,14 @@
    ;; same command for the key pairs C-i, TAB, C-m, and RET
    dotspacemacs-distinguish-gui-tab nil
 
-   ;; If non nil `Y' is remapped to `y$' in evil states. (default nil)
+   ;; if non nil, `Y' is remapped to `y$' in evil states. (default nil)
    dotspacemacs-remap-Y-to-y$ nil
 
-   ;; If non-nil, the shift mappings `<' and `>' retain visual state if used
+   ;; if non-nil, the shift mappings `<' and `>' retain visual state if used
    ;; there. (default t)
    dotspacemacs-retain-visual-state-on-shift t
 
-   ;; If non-nil, J and K move lines up and down when in visual mode.
+   ;; if non-nil, J and K move lines up and down when in visual mode.
    dotspacemacs-visual-line-move-text nil
 
    ;; if non nil, inverse the meaning of `g' in `:substitute' evil ex-command.
@@ -165,10 +165,10 @@
    ;; Name of the default layout (default "Default")
    dotspacemacs-default-layout-name "default"
 
-   ;; If non nil the default layout name is displayed in the mode-line.
+   ;; if non nil, the default layout name is displayed in the mode-line.
    dotspacemacs-display-default-layout nil
 
-   ;; If non nil then the last auto saved layouts are resume automatically upon
+   ;; if non nil, then the last auto saved layouts are resume automatically upon
    ;; start.
    dotspacemacs-auto-resume-layouts nil
 
@@ -196,7 +196,7 @@
    ;; (default 'always)
    dotspacemacs-helm-use-fuzzy 'always
 
-   ;; If non nil the paste micro-state is enabled. When enabled pressing `p`
+   ;; if non nil, the paste micro-state is enabled. When enabled pressing `p`
    ;; several times cycle between the kill ring content. (default nil)
    dotspacemacs-enable-paste-transient-state nil
 
@@ -210,20 +210,20 @@
    ;; (default 'bottom)
    dotspacemacs-which-key-position 'bottom
 
-   ;; If non nil a progress bar is displayed when spacemacs is loading. This
+   ;; if non nil, a progress bar is displayed when spacemacs is loading. This
    ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil to boost the loading time. (default t)
    dotspacemacs-loading-progress-bar t
 
-   ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
+   ;; if non nil, the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
    dotspacemacs-fullscreen-at-startup t
 
-   ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
+   ;; if non nil, `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
    dotspacemacs-fullscreen-use-non-native nil
 
-   ;; If non nil the frame is maximized when Emacs starts up.
+   ;; if non nil, the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
    dotspacemacs-maximized-at-startup nil
@@ -238,13 +238,13 @@
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
    dotspacemacs-inactive-transparency 90
 
-   ;; If non nil show the titles of transient states. (default t)
+   ;; if non nil, show the titles of transient states. (default t)
    dotspacemacs-show-transient-state-title t
 
-   ;; If non nil show the color guide hint for transient state keys. (default t)
+   ;; if non nil, show the color guide hint for transient state keys. (default t)
    dotspacemacs-show-transient-state-color-guide t
 
-   ;; If non nil unicode symbols are displayed in the mode line. (default t)
+   ;; if non nil, unicode symbols are displayed in the mode line. (default t)
    dotspacemacs-mode-line-unicode-symbols t
 
    ;; smooth scrolling
