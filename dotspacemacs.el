@@ -147,14 +147,11 @@
    ;; same command for the key pairs C-i, TAB, C-m, and RET
    dotspacemacs-distinguish-gui-tab nil
 
-   ;; if non nil, `Y' is remapped to `y$' in evil states. (default nil)
+   ;; if non nil, `Y' is remapped to `y$' in evil states
    dotspacemacs-remap-Y-to-y$ nil
 
-   ;; if non-nil, the shift mappings `<' and `>' retain visual state if used
-   ;; there. (default t)
+   ;; if non-nil, shift mappings `<' and `>' retain visual state
    dotspacemacs-retain-visual-state-on-shift t
-
-;; TODO begin
 
    ;; if non-nil, J and K move lines up and down when in visual mode
    dotspacemacs-visual-line-move-text nil
@@ -162,14 +159,13 @@
    ;; if non nil, inverse the meaning of `g' in `:substitute' evil ex-command
    dotspacemacs-ex-substitute-global nil
 
-   ;; Name of the default layout (default "Default")
+   ;; name of the default layout
    dotspacemacs-default-layout-name "default"
 
    ;; if non nil, the default layout name is displayed in the mode-line
    dotspacemacs-display-default-layout nil
 
-   ;; if non nil, then the last auto saved layouts are resume automatically upon
-   ;; start.
+   ;; if non nil, last auto saved layouts are resume automatically upon start
    dotspacemacs-auto-resume-layouts nil
 
    ;; size (MB) above which spacemacs will prompt to open large file
@@ -180,6 +176,8 @@
 
    ;; maximum number of rollback slots
    dotspacemacs-max-rollback-slots 5
+
+   ;; TODO begin
 
    ;; if non nil, `helm' will try to minimize the space it uses. (default nil)
    dotspacemacs-helm-resize nil
