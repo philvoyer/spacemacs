@@ -77,14 +77,14 @@
   ;; list of all spacemacs settings
   (setq-default
 
+   ;; check for updates at startup
+   dotspacemacs-check-for-update nil
+
    ;; contact ELPA repositories via HTTPS
    dotspacemacs-elpa-https t
 
    ;; contact an ELPA repository timout
    dotspacemacs-elpa-timeout 5
-
-   ;; check for updates at startup
-   dotspacemacs-check-for-update nil
 
    ;; use package subdirectory
    dotspacemacs-elpa-subdirectory nil
@@ -260,7 +260,7 @@
    dotspacemacs-smartparens-strict-mode t
 
    ;; pressing `)' key in insert mode passes over automatically added delimiters
-   dotspacemacs-smart-closing-parenthesis t
+   dotspacemacs-smart-closing-parenthesis nil
 
    ;; highlight delimiters
    dotspacemacs-highlight-delimiters 'all
