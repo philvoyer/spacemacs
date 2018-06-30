@@ -63,8 +63,6 @@
    ;; frozen packages
    dotspacemacs-frozen-packages '()
 
-   ;; rendu icitte
-
    ;; excluded packages
    dotspacemacs-excluded-packages '()
 
@@ -109,13 +107,13 @@
                                 (todos . 5)
                                 (agenda . 5))
 
-   ;; home buffer should respond to resize events.
+   ;; home buffer should respond to resize events
    dotspacemacs-startup-buffer-responsive t
 
    ;; default major mode of the scratch buffer
    dotspacemacs-scratch-mode 'text-mode
 
-   ;; list of themes, the first of the list is loaded when spacemacs starts.
+   ;; list of themes, the first of the list is loaded when spacemacs starts
    dotspacemacs-themes '(spacemacs-dark
                          spacemacs-light)
 
@@ -131,7 +129,7 @@
    ;; leader key
    dotspacemacs-leader-key "SPC"
 
-   ;; emacs commands (M-x) (after pressing on the leader key).
+   ;; emacs commands (M-x) (after pressing on the leader key)
    dotspacemacs-emacs-command-key "SPC"
 
    ;; vim ex commands (default ":")
@@ -158,16 +156,16 @@
 
 ;; TODO begin
 
-   ;; if non-nil, J and K move lines up and down when in visual mode.
+   ;; if non-nil, J and K move lines up and down when in visual mode
    dotspacemacs-visual-line-move-text nil
 
-   ;; if non nil, inverse the meaning of `g' in `:substitute' evil ex-command.
+   ;; if non nil, inverse the meaning of `g' in `:substitute' evil ex-command
    dotspacemacs-ex-substitute-global nil
 
    ;; Name of the default layout (default "Default")
    dotspacemacs-default-layout-name "default"
 
-   ;; if non nil, the default layout name is displayed in the mode-line.
+   ;; if non nil, the default layout name is displayed in the mode-line
    dotspacemacs-display-default-layout nil
 
    ;; if non nil, then the last auto saved layouts are resume automatically upon
@@ -186,7 +184,7 @@
    ;; if non nil, `helm' will try to minimize the space it uses. (default nil)
    dotspacemacs-helm-resize nil
 
-   ;; if non nil, the helm header is hidden when there is only one source.
+   ;; if non nil, the helm header is hidden when there is only one source
    dotspacemacs-helm-no-header nil
 
    ;; position to display `helm'
@@ -269,7 +267,7 @@
    ;; highlight delimiters
    dotspacemacs-highlight-delimiters 'all
 
-   ;; keep server open when quitting.
+   ;; keep server open when quitting
    dotspacemacs-persistent-server nil
 
    ;; list of search tool executable names
