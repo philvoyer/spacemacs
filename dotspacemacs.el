@@ -99,8 +99,6 @@
    dotspacemacs-startup-banner 'official
 
    ;; list of items to show in startup buffer
-   ;; possible values for list-type are:
-   ;; `recents' `bookmarks' `projects' `agenda' `todos'."
    dotspacemacs-startup-lists '((recents . 10)
                                 (projects . 5)
                                 (bookmarks . 5)
