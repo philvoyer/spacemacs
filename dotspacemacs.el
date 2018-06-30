@@ -223,14 +223,10 @@
    ;; (default nil) (Emacs 24.4+ only)
    dotspacemacs-maximized-at-startup nil
 
-   ;; A value from the range (0..100), in increasing opacity, which describes
-   ;; the transparency level of a frame when it's active or selected.
-   ;; Transparency can be toggled through `toggle-transparency'. (default 90)
+   ;; transparency level of a frame when it's active or selected (%)
    dotspacemacs-active-transparency 90
 
-   ;; A value from the range (0..100), in increasing opacity, which describes
-   ;; the transparency level of a frame when it's inactive or deselected.
-   ;; Transparency can be toggled through `toggle-transparency'. (default 90)
+   ;; transparency level of a frame when it's inactive or deselected (%)
    dotspacemacs-inactive-transparency 90
 
    ;; if non nil, show the titles of transient states
