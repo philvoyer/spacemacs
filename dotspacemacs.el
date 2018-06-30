@@ -233,10 +233,10 @@
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
    dotspacemacs-inactive-transparency 90
 
-   ;; if non nil, show the titles of transient states. (default t)
+   ;; if non nil, show the titles of transient states
    dotspacemacs-show-transient-state-title t
 
-   ;; if non nil, show the color guide hint for transient state keys. (default t)
+   ;; if non nil, show the color guide hint for transient state keys
    dotspacemacs-show-transient-state-color-guide t
 
    ;; if non nil, unicode symbols are displayed in the mode line. (default t)
