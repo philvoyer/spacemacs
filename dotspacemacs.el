@@ -254,7 +254,7 @@
    dotspacemacs-folding-method 'evil
 
    ;; smartparens-strict-mode enabled in programming modes
-   dotspacemacs-smartparens-strict-mode t
+   dotspacemacs-smartparens-strict-mode nil
 
    ;; pressing `)' key in insert mode passes over automatically added delimiters
    dotspacemacs-smart-closing-parenthesis nil
