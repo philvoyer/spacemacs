@@ -177,22 +177,19 @@
    ;; maximum number of rollback slots
    dotspacemacs-max-rollback-slots 5
 
-   ;; TODO begin
+   ;; if non nil, `helm' will try to minimize the space it uses
+   dotspacemacs-helm-resize t
 
-   ;; if non nil, `helm' will try to minimize the space it uses. (default nil)
-   dotspacemacs-helm-resize nil
-
-   ;; if non nil, the helm header is hidden when there is only one source
-   dotspacemacs-helm-no-header nil
+   ;; if non nil, helm header is hidden when there is only one source
+   dotspacemacs-helm-no-header t
 
    ;; position to display `helm'
    dotspacemacs-helm-position 'bottom
 
-   ;; Controls fuzzy matching in helm. If set to `always', force fuzzy matching
-   ;; in all non-asynchronous sources. If set to `source', preserve individual
-   ;; source settings. Else, disable fuzzy matching in all sources.
-   ;; (default 'always)
+   ;; fuzzy matching in `helm'
    dotspacemacs-helm-use-fuzzy 'always
+
+   ;; TODO begin
 
    ;; if non nil, the paste micro-state is enabled. When enabled pressing `p`
    ;; several times cycle between the kill ring content. (default nil)
