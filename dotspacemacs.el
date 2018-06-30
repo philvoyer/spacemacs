@@ -156,6 +156,8 @@
    ;; there. (default t)
    dotspacemacs-retain-visual-state-on-shift t
 
+;; TODO begin
+
    ;; if non-nil, J and K move lines up and down when in visual mode.
    dotspacemacs-visual-line-move-text nil
 
@@ -246,6 +248,8 @@
 
    ;; if non nil, unicode symbols are displayed in the mode line. (default t)
    dotspacemacs-mode-line-unicode-symbols t
+
+;; TODO end
 
    ;; smooth scrolling
    dotspacemacs-smooth-scrolling t
