@@ -159,7 +159,7 @@
    ;; If non-nil, J and K move lines up and down when in visual mode.
    dotspacemacs-visual-line-move-text nil
 
-   ;; If non nil, inverse the meaning of `g' in `:substitute' evil ex-command.
+   ;; if non nil, inverse the meaning of `g' in `:substitute' evil ex-command.
    dotspacemacs-ex-substitute-global nil
 
    ;; Name of the default layout (default "Default")
@@ -172,9 +172,7 @@
    ;; start.
    dotspacemacs-auto-resume-layouts nil
 
-   ;; Size (in MB) above which spacemacs will prompt to open the large file
-   ;; literally to avoid performance issues. Opening a file literally means that
-   ;; no major mode or minor modes are active. (default is 1)
+   ;; size (MB) above which spacemacs will prompt to open large file
    dotspacemacs-large-file-size 1
 
    ;; auto-save file location
@@ -183,14 +181,13 @@
    ;; maximum number of rollback slots
    dotspacemacs-max-rollback-slots 5
 
-   ;; If non nil, `helm' will try to minimize the space it uses. (default nil)
+   ;; if non nil, `helm' will try to minimize the space it uses. (default nil)
    dotspacemacs-helm-resize nil
 
    ;; if non nil, the helm header is hidden when there is only one source.
    dotspacemacs-helm-no-header nil
 
-   ;; define the position to display `helm', options are `bottom', `top',
-   ;; `left', or `right'. (default 'bottom)
+   ;; position to display `helm'
    dotspacemacs-helm-position 'bottom
 
    ;; Controls fuzzy matching in helm. If set to `always', force fuzzy matching
