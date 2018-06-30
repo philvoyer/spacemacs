@@ -205,22 +205,16 @@
    ;; (default 'bottom)
    dotspacemacs-which-key-position 'bottom
 
-   ;; if non nil, a progress bar is displayed when spacemacs is loading. This
-   ;; may increase the boot time on some systems and emacs builds, set it to
-   ;; nil to boost the loading time. (default t)
+   ;; if non nil, progress bar is displayed when spacemacs is loading
    dotspacemacs-loading-progress-bar t
 
-   ;; if non nil, the frame is fullscreen when Emacs starts up. (default nil)
-   ;; (Emacs 24.4+ only)
+   ;; if non nil, frame is fullscreen when emacs starts up
    dotspacemacs-fullscreen-at-startup t
 
-   ;; if non nil, `spacemacs/toggle-fullscreen' will not use native fullscreen.
-   ;; Use to disable fullscreen animations in OSX. (default nil)
-   dotspacemacs-fullscreen-use-non-native nil
+   ;; if non nil, disable fullscreen animations in OSX
+   dotspacemacs-fullscreen-use-non-native t
 
-   ;; if non nil, the frame is maximized when Emacs starts up.
-   ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
-   ;; (default nil) (Emacs 24.4+ only)
+   ;; if non nil, the frame is maximized when emacs starts up
    dotspacemacs-maximized-at-startup nil
 
    ;; transparency level of a frame when it's active or selected (%)
