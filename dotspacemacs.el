@@ -189,10 +189,7 @@
    ;; fuzzy matching in `helm'
    dotspacemacs-helm-use-fuzzy 'always
 
-   ;; TODO begin
-
-   ;; if non nil, the paste micro-state is enabled. When enabled pressing `p`
-   ;; several times cycle between the kill ring content. (default nil)
+   ;; if non nil, paste micro-state is enabled (pressing `p` several times cycle between the kill ring content)
    dotspacemacs-enable-paste-transient-state nil
 
    ;; which-key delay in seconds (popup listing commands bound to the current keystroke sequence)
@@ -225,10 +222,8 @@
    ;; if non nil, show the color guide hint for transient state keys
    dotspacemacs-show-transient-state-color-guide t
 
-   ;; if non nil, unicode symbols are displayed in the mode line. (default t)
+   ;; if non nil, unicode symbols are displayed in the mode line
    dotspacemacs-mode-line-unicode-symbols t
-
-;; TODO end
 
    ;; smooth scrolling
    dotspacemacs-smooth-scrolling t
