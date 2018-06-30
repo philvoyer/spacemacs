@@ -263,4 +263,12 @@
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
    This function is called at the very end of Spacemacs initialization after layers configuration."
+
+  ;; display time in status bar
+  (display-time-mode t)
+
+  ;; HACK fix the auto paste in file open with mouse click on recent file
+  ;; https://github.com/syl20bnr/spacemacs/issues/5435
+  (add-hook 'spacemacs-buffer-mode-hook (lambda ()
+                                          (set (make-local-variable 'mouse-1-click-follows-link) nil)))
   )
