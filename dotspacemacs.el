@@ -45,6 +45,7 @@
      osx
      python
      shell
+     shaders
      (shell :variables shell-default-shell 'eshell)
      (shell :variables shell-default-position 'bottom)
      (shell :variables shell-default-width 20)
