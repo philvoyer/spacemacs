@@ -44,6 +44,7 @@
      org
      osx
      python
+     search-engine
      shell
      shaders
      (shell :variables shell-default-shell 'eshell)
