@@ -59,7 +59,7 @@
      )
 
    ;; additional packages
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(editorconfig)
 
    ;; frozen packages
    dotspacemacs-frozen-packages '()
@@ -268,7 +268,10 @@
   ;; display time in status bar
   (display-time-mode t)
 
-  ;; HACK fix the auto paste in file open with mouse click on recent file
+  ;; activate editorconfig mode at startup
+  (editorconfig-mode 1)
+
+  ;; HACK fix auto paste in file opened with mouse click on recent file
   ;; https://github.com/syl20bnr/spacemacs/issues/5435
   (add-hook 'spacemacs-buffer-mode-hook (lambda ()
                                           (set (make-local-variable 'mouse-1-click-follows-link) nil)))
