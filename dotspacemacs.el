@@ -35,6 +35,7 @@
      git
      helm
      html
+     java
      javascript
      latex
      (latex :variables latex-build-command "LaTeX")
@@ -272,8 +273,11 @@
   ;; activate editorconfig mode at startup
   (editorconfig-mode 1)
 
+  ;; associate processing files to java mode
+  (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
+
   ;; HACK fix auto paste in file opened with mouse click on recent file
   ;; https://github.com/syl20bnr/spacemacs/issues/5435
   (add-hook 'spacemacs-buffer-mode-hook (lambda ()
-                                          (set (make-local-variable 'mouse-1-click-follows-link) nil)))
+    (set (make-local-variable 'mouse-1-click-follows-link) nil)))
   )
