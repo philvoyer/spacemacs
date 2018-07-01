@@ -196,7 +196,7 @@
    dotspacemacs-which-key-delay 0.4
 
    ;; which-key frame position
-   dotspacemacs-which-key-position 'right-then-bottom
+   dotspacemacs-which-key-position 'bottom
 
    ;; if non nil, progress bar is displayed when spacemacs is loading
    dotspacemacs-loading-progress-bar t
