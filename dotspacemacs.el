@@ -182,7 +182,7 @@
    dotspacemacs-helm-resize t
 
    ;; if non nil, helm header is hidden when there is only one source
-   dotspacemacs-helm-no-header t
+   dotspacemacs-helm-no-header nil
 
    ;; position to display `helm'
    dotspacemacs-helm-position 'bottom
