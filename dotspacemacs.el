@@ -173,7 +173,7 @@
    dotspacemacs-large-file-size 1
 
    ;; auto-save file location
-   dotspacemacs-auto-save-file-location 'original
+   dotspacemacs-auto-save-file-location 'cache
 
    ;; maximum number of rollback slots
    dotspacemacs-max-rollback-slots 5
