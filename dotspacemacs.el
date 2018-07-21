@@ -280,4 +280,7 @@
   ;; https://github.com/syl20bnr/spacemacs/issues/5435
   (add-hook 'spacemacs-buffer-mode-hook (lambda ()
     (set (make-local-variable 'mouse-1-click-follows-link) nil)))
+
+  ;; HACK fix yas error message at startup (https://github.com/syl20bnr/spacemacs/issues/10316)
+  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
   )
