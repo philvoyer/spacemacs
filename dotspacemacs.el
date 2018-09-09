@@ -254,7 +254,7 @@
    dotspacemacs-default-package-repository nil
 
    ;; delete whitespace while saving buffer
-   dotspacemacs-whitespace-cleanup 'trailing
+   dotspacemacs-whitespace-cleanup nil ;; use .editorconfig instead
    )
   )
 
