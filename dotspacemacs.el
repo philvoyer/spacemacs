@@ -47,6 +47,7 @@
      osx
      python
      search-engine
+     semantic
      shell
      shaders
      (shell :variables shell-default-shell 'eshell)
