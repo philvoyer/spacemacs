@@ -272,7 +272,14 @@
   ;; display time in status bar
   (display-time-mode t)
 
-  ;; activate editorconfig mode at startup
+  ;; c indentation style
+  (setq-default c-default-style "bsd")
+  (setq-default c-basic-offset 2)
+
+  ;; probably overrided by editor config
+  (setq-default tab-width 2)
+
+  ;; activate editorconfig mode
   (editorconfig-mode 1)
 
   ;; associate processing files to java mode
