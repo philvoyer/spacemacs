@@ -282,6 +282,12 @@
   ;; activate editorconfig mode
   (editorconfig-mode 1)
 
+  ;; turn on RefTeX in AUCTeX
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+
+  ;; activate nice interface between RefTeX and AUCTeX
+  (setq reftex-plug-into-AUCTeX t)
+
   ;; associate processing files to java mode
   (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
