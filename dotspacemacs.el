@@ -283,7 +283,8 @@
   (editorconfig-mode 1)
 
   ;; turn off auto-fill-mode in latex buffer
-  (add-hook 'LaTeX-mode-hook 'latex-enable-auto-fill nil)
+  ;; FFT : semble faire crasher la compilation avec master file
+  ;; (add-hook 'LaTeX-mode-hook 'latex-enable-auto-fill nil)
 
   ;; turn on RefTeX in AUCTeX
   (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
