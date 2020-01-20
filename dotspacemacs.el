@@ -32,6 +32,7 @@
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      (colors :variables colors-colorize-identifiers 'all)
      csharp
+     csv
      emacs-lisp
      git
      helm
