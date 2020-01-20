@@ -58,6 +58,7 @@
      (shell :variables shell-default-full-span nil)
      ;; spell-checking
      ;; syntax-checking
+     swift
      version-control
      (version-control :variables version-control-diff-tool 'diff-hl)
      (version-control :variables version-control-global-margin t)
