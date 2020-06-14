@@ -47,6 +47,7 @@
      org
      osx
      python
+     react
      search-engine
      semantic
      shell
