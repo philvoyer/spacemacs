@@ -279,6 +279,14 @@
   (setq-default c-default-style "bsd")
   (setq-default c-basic-offset 2)
 
+  ;; web identation style
+  (setq-default js2-basic-offset 2)
+  (setq-default css-indent-offset 2)
+  (setq-default web-mode-markup-indent-offset 2)
+  (setq-default web-mode-css-indent-offset 2)
+  (setq-default web-mode-code-indent-offset 2)
+  (setq-default web-mode-attr-indent-offset 2)
+
   ;; probably overrided by editor config
   (setq-default tab-width 2)
 
