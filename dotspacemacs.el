@@ -35,6 +35,7 @@
        csv
        emacs-lisp
        git
+       (git :variables git-magit-status-fullscreen t)
        helm
        html
        java
