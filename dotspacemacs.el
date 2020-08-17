@@ -121,8 +121,7 @@
     dotspacemacs-scratch-mode 'text-mode
 
     ;; list of themes, the first of the list is loaded when spacemacs starts
-    dotspacemacs-themes '(spacemacs-dark
-                           spacemacs-light)
+    dotspacemacs-themes '(spacemacs-dark spacemacs-light)
 
     ;; cursor color matches the state color
     dotspacemacs-colorize-cursor-according-to-state t
