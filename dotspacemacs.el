@@ -177,7 +177,7 @@
     ;; size (MB) above which spacemacs will prompt to open large file
     dotspacemacs-large-file-size 1
 
-    ;; auto-save file location
+    ;; auto-save file location (`original' or `cache')
     dotspacemacs-auto-save-file-location 'cache
 
     ;; maximum number of rollback slots
@@ -196,24 +196,24 @@
     dotspacemacs-helm-use-fuzzy 'always
 
     ;; if non nil, paste micro-state is enabled (pressing `p` several times cycle between the kill ring content)
-    dotspacemacs-enable-paste-transient-state nil
+    dotspacemacs-enable-paste-transient-state t
 
     ;; which-key delay in seconds (popup listing commands bound to the current keystroke sequence)
     dotspacemacs-which-key-delay 0.4
 
     ;; which-key frame position
-    dotspacemacs-which-key-position 'bottom
+    dotspacemacs-which-key-position 'right-then-bottom
 
-    ;; if non nil, progress bar is displayed when spacemacs is loading
+    ;; progress bar is displayed when spacemacs is loading
     dotspacemacs-loading-progress-bar t
 
-    ;; if non nil, frame is fullscreen when emacs starts up
+    ;; frame is fullscreen when emacs starts up
     dotspacemacs-fullscreen-at-startup t
 
-    ;; if non nil, disable fullscreen animations in OSX
+    ;; disable fullscreen animations in OSX
     dotspacemacs-fullscreen-use-non-native t
 
-    ;; if non nil, the frame is maximized when emacs starts up
+    ;; frame is maximized when emacs starts up
     dotspacemacs-maximized-at-startup nil
 
     ;; transparency level of a frame when it's active or selected (%)
