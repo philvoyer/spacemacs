@@ -51,8 +51,8 @@
        react
        search-engine
        semantic
-       shell
        shaders
+       shell
        (shell :variables shell-default-shell 'eshell)
        (shell :variables shell-default-position 'bottom)
        (shell :variables shell-default-width 20)
