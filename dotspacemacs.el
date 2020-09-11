@@ -275,23 +275,18 @@
   ;; display time in status bar
   (display-time-mode t)
 
-  ;; c indentation style
-  (setq-default c-default-style "bsd")
-  (setq-default c-basic-offset 2)
-
-  ;; web identation style
-  (setq-default js2-basic-offset 2)
-  (setq-default css-indent-offset 2)
-  (setq-default web-mode-markup-indent-offset 2)
-  (setq-default web-mode-css-indent-offset 2)
-  (setq-default web-mode-code-indent-offset 2)
-  (setq-default web-mode-attr-indent-offset 2)
-
-  ;; probably overrided by editor config
-  (setq-default tab-width 2)
-
   ;; activate editorconfig mode
   (editorconfig-mode 1)
+
+  ;; deft configuration
+  (setq deft-extensions '("org" "md" "txt"))
+  (setq deft-directory "~/...")
+
+  ;; c indentation style
+  (setq-default c-default-style "bsd")
+
+  ;; associate processing files to java mode
+  (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
   ;; turn off auto-fill-mode in latex buffer
   ;; FFT : semble faire crasher la compilation avec master file
@@ -302,9 +297,6 @@
 
   ;; activate nice interface between RefTeX and AUCTeX
   (setq reftex-plug-into-AUCTeX t)
-
-  ;; associate processing files to java mode
-  (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
   ;; HACK fix auto paste in file opened with mouse click on recent file
   ;; https://github.com/syl20bnr/spacemacs/issues/5435
