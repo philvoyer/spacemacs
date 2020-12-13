@@ -40,6 +40,7 @@
        html
        java
        javascript
+       json
        latex
        (latex :variables latex-build-command "LaTeX")
        (latex :variables latex-enable-auto-fill t)
