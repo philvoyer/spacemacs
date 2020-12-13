@@ -41,6 +41,8 @@
        java
        javascript
        json
+       (json :variables js-indent-level 2)
+       (json :variables json-backend nil)
        latex
        (latex :variables latex-build-command "LaTeX")
        (latex :variables latex-enable-auto-fill t)
