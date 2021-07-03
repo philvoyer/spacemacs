@@ -61,8 +61,11 @@
        (shell :variables shell-default-width 20)
        (shell :variables shell-default-height 20)
        (shell :variables shell-default-full-span nil)
-       ;; spell-checking
-       ;; syntax-checking
+       spell-checking
+       (spell-checking :variables spell-checking-enable-by-default nil)
+       (spell-checking :variables spell-checking-enable-auto-dictionary t)
+       (spell-checking :variables =enable-flyspell-auto-completion= t)
+       syntax-checking
        swift
        version-control
        (version-control :variables version-control-diff-tool 'diff-hl)
