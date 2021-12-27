@@ -33,6 +33,7 @@
        (colors :variables colors-colorize-identifiers 'all)
        csharp
        csv
+       dart
        emacs-lisp
        git
        (git :variables git-magit-status-fullscreen t)
