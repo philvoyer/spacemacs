@@ -36,6 +36,7 @@
        emacs-lisp
        git
        (git :variables git-magit-status-fullscreen t)
+       gpu
        helm
        html
        java
@@ -54,7 +55,7 @@
        react
        search-engine
        semantic
-       shaders
+       ;;shaders > now gpu
        shell
        (shell :variables shell-default-shell 'eshell)
        (shell :variables shell-default-position 'bottom)
