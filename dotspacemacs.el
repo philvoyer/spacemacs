@@ -72,6 +72,7 @@
        version-control
        (version-control :variables version-control-diff-tool 'diff-hl)
        (version-control :variables version-control-global-margin t)
+       yaml
        )
 
     ;; additional packages
