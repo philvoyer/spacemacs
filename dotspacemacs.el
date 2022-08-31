@@ -34,6 +34,7 @@
        csharp
        csv
        dart
+       elixir
        emacs-lisp
        git
        (git :variables git-magit-status-fullscreen t)
@@ -280,6 +281,9 @@
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
    This function is called at the very end of Spacemacs initialization after layers configuration."
+
+  ;; activate visual-line-mode for text mode (ex. .org)
+  (add-hook 'text-mode-hook #'visual-line-mode)
 
   ;; display time in status bar
   (display-time-mode t)
