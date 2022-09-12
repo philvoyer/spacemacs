@@ -68,6 +68,7 @@
        (spell-checking :variables spell-checking-enable-by-default nil)
        (spell-checking :variables spell-checking-enable-auto-dictionary t)
        (spell-checking :variables =enable-flyspell-auto-completion= t)
+       sql
        syntax-checking
        swift
        version-control
