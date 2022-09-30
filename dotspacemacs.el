@@ -292,6 +292,9 @@
   ;; activate editorconfig mode
   (editorconfig-mode 1)
 
+  ;; activate which-function-mode
+  (which-function-mode 1)
+
   ;; deft configuration
   (setq deft-extensions '("org" "md" "txt"))
   (setq deft-directory "~/...")
