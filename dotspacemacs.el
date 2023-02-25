@@ -52,6 +52,7 @@
        (latex :variables latex-enable-folding t)
        markdown
        org
+       (org :variables org-adapt-indentation nil)
        osx
        python
        react
