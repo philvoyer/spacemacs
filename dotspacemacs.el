@@ -51,6 +51,7 @@
        (latex :variables latex-enable-auto-fill t)
        (latex :variables latex-enable-folding t)
        markdown
+       nav-flash
        org
        (org :variables org-adapt-indentation nil)
        osx
