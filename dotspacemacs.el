@@ -57,6 +57,7 @@
        osx
        python
        react
+       rust
        search-engine
        semantic
        ;;shaders > now gpu
