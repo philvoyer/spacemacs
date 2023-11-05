@@ -286,6 +286,9 @@
   "Configuration function for user code.
    This function is called at the very end of Spacemacs initialization after layers configuration."
 
+  ;; activate point in center of frame
+  (spacemacs/toggle-centered-point-globally)
+
   ;; activate visual-line-mode for text mode (ex. .org)
   (add-hook 'text-mode-hook #'visual-line-mode)
 
@@ -298,9 +301,13 @@
   ;; activate which-function-mode
   (which-function-mode 1)
 
+  ;; python
+  (setq python-indent-guess-indent-offset t) ;; guess indent (active by default)
+  (setq python-indent-guess-indent-offset-verbose nil) ;; but silent warning
+
   ;; deft configuration
   (setq deft-extensions '("org" "md" "txt"))
-  (setq deft-directory "~/...")
+  (setq deft-directory "~/github/sidenote")
 
   ;; c indentation style
   (setq-default c-default-style "bsd")
@@ -308,21 +315,9 @@
   ;; associate processing files to java mode
   (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
-  ;; turn off auto-fill-mode in latex buffer
-  ;; FFT : semble faire crasher la compilation avec master file
-  ;; (add-hook 'LaTeX-mode-hook 'latex-enable-auto-fill nil)
+  ;; associate .subseqnth to clojure mode
+  (add-to-list 'auto-mode-alist '("\\.subseqnth\\'" . clojure-mode))
 
-  ;; turn on RefTeX in AUCTeX
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-
-  ;; activate nice interface between RefTeX and AUCTeX
-  (setq reftex-plug-into-AUCTeX t)
-
-  ;; HACK fix auto paste in file opened with mouse click on recent file
-  ;; https://github.com/syl20bnr/spacemacs/issues/5435
-  (add-hook 'spacemacs-buffer-mode-hook (lambda ()
-                                          (set (make-local-variable 'mouse-1-click-follows-link) nil)))
-
-  ;; HACK fix yas error message at startup (https://github.com/syl20bnr/spacemacs/issues/10316)
-  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  ;; latex
+  (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:$PATH" t)
   )
