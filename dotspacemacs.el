@@ -50,6 +50,10 @@
        (latex :variables latex-build-command "LaTeX")
        (latex :variables latex-enable-auto-fill t)
        (latex :variables latex-enable-folding t)
+       lsp
+       (lsp :variables lsp-lens-enable t)
+       (lsp :variables lsp-headerline-breadcrumb-segments '(project file symbols))
+       lua
        markdown
        nav-flash
        org
@@ -60,12 +64,11 @@
        rust
        search-engine
        semantic
-       ;;shaders > now gpu
        shell
        (shell :variables shell-default-shell 'eshell)
        (shell :variables shell-default-position 'bottom)
        (shell :variables shell-default-width 20)
-       (shell :variables shell-default-height 20)
+       (shell :variables shell-default-heigh3 20)
        (shell :variables shell-default-full-span nil)
        spell-checking
        (spell-checking :variables spell-checking-enable-by-default nil)
@@ -106,24 +109,24 @@
     ;; contact ELPA repositories via HTTPS
     dotspacemacs-elpa-https t
 
-    ;; contact an ELPA repository timout
+    ;; contact ELPA repository timout
     dotspacemacs-elpa-timeout 5
 
-    ;; use package subdirectory
+    ;; use ELPA package subdirectory
     dotspacemacs-elpa-subdirectory nil
 
     ;; editing style
     dotspacemacs-editing-style 'vim
 
-    ;; output loading progress in `*messages*' buffer
+    ;; output loading progress in `*Messages*' buffer
     dotspacemacs-verbose-loading nil
 
     ;; startup banner
-    dotspacemacs-startup-banner 'official
+    dotspacemacs-startup-banner 'random
 
     ;; list of items to show in startup buffer
-    dotspacemacs-startup-lists '((recents . 10)
-                                  (projects . 5)
+    dotspacemacs-startup-lists '((recents . 20)
+                                  (projects . 10)
                                   (bookmarks . 5)
                                   (todos . 5)
                                   (agenda . 5))
@@ -142,10 +145,11 @@
 
     ;; default font, or prioritized list of fonts
     dotspacemacs-default-font '("Source Code Pro"
-                                 :size 13
+                                 :size 16
                                  :weight normal
                                  :width normal
                                  :powerline-scale 1.1)
+
     ;; leader key
     dotspacemacs-leader-key "SPC"
 
@@ -203,20 +207,21 @@
     ;; if non nil, helm header is hidden when there is only one source
     dotspacemacs-helm-no-header nil
 
-    ;; position to display `helm'
+    ;; position to display `helm' (`bottom', `top', `left' or `right')
     dotspacemacs-helm-position 'bottom
 
-    ;; fuzzy matching in `helm'
+    ;; fuzzy matching in `helm' (`always' or `source')
     dotspacemacs-helm-use-fuzzy 'always
 
-    ;; if non nil, paste micro-state is enabled (pressing `p` several times cycle between the kill ring content)
+    ;; if non nil, paste micro-state is enabled (`p` cycle between kill ring content)
     dotspacemacs-enable-paste-transient-state t
 
     ;; which-key delay in seconds (popup listing commands bound to the current keystroke sequence)
     dotspacemacs-which-key-delay 0.4
 
-    ;; which-key frame position
-    dotspacemacs-which-key-position 'right-then-bottom
+    ;; which-key frame position (`right', `bottom' or `right-then-bottom')
+    dotspacemacs-which-key-position 'bottom
+    ;; dotspacemacs-which-key-position 'right-then-bottom
 
     ;; progress bar is displayed when spacemacs is loading
     dotspacemacs-loading-progress-bar t
@@ -230,10 +235,10 @@
     ;; frame is maximized when emacs starts up
     dotspacemacs-maximized-at-startup nil
 
-    ;; transparency level of a frame when it's active or selected (%)
+    ;; transparency level of a frame when it's active or selected
     dotspacemacs-active-transparency 90
 
-    ;; transparency level of a frame when it's inactive or deselected (%)
+    ;; transparency level of a frame when it's inactive or deselected
     dotspacemacs-inactive-transparency 90
 
     ;; if non nil, show the titles of transient states
@@ -251,13 +256,14 @@
     ;; display line numbers
     dotspacemacs-line-numbers t
 
-    ;; code folding method
+    ;; code folding method (`evil' or `origami')
     dotspacemacs-folding-method 'evil
 
     ;; smartparens-strict-mode enabled in programming modes
     dotspacemacs-smartparens-strict-mode nil
 
     ;; pressing `)' key in insert mode passes over automatically added delimiters
+    ;; disabled by pressing `C-q' before `)'
     dotspacemacs-smart-closing-parenthesis nil
 
     ;; highlight delimiters
@@ -304,10 +310,6 @@
   ;; python
   (setq python-indent-guess-indent-offset t) ;; guess indent (active by default)
   (setq python-indent-guess-indent-offset-verbose nil) ;; but silent warning
-
-  ;; deft configuration
-  (setq deft-extensions '("org" "md" "txt"))
-  (setq deft-directory "~/github/sidenote")
 
   ;; c indentation style
   (setq-default c-default-style "bsd")
