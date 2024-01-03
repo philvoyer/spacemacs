@@ -30,7 +30,7 @@
        clojure
        colors
        (colors :variables colors-enable-nyan-cat-progress-bar t)
-       (colors :variables colors-colorize-identifiers 'all)
+       (colors :variables colors-colorize-identifiers 'variables) ;; 'all 'variables
        csharp
        csv
        dart
