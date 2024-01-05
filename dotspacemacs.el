@@ -50,9 +50,12 @@
        (latex :variables latex-build-command "LaTeX")
        (latex :variables latex-enable-auto-fill t)
        (latex :variables latex-enable-folding t)
-       lsp
-       (lsp :variables lsp-lens-enable t)
+       lsp ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
        (lsp :variables lsp-headerline-breadcrumb-segments '(project file symbols))
+       (lsp :variables lsp-enable-symbol-highlighting nil)
+       (lsp :variables lsp-lens-enable t)
+       (lsp :variables lsp-ui-sideline-enable t)
+       (lsp :variables lsp-signature-auto-activate t)
        lua
        markdown
        nav-flash
@@ -286,6 +289,9 @@
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
    It is called immediately after `dotspacemacs/init', before layer configuration executes."
+  ;; override theme color
+  ;; (custom-set-variables '(spacemacs-theme-custom-colors
+  ;;                          '((highlight . "#ffff00"))))
   )
 
 (defun dotspacemacs/user-config ()
