@@ -51,7 +51,9 @@
        (latex :variables latex-enable-auto-fill t)
        (latex :variables latex-enable-folding t)
        lsp ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
+       (lsp :variables lsp-headerline-breadcrumb-enable t)
        (lsp :variables lsp-headerline-breadcrumb-segments '(project file symbols))
+       (lsp :variables lsp-ui-doc-enable t)
        (lsp :variables lsp-enable-symbol-highlighting nil)
        (lsp :variables lsp-lens-enable t)
        (lsp :variables lsp-ui-sideline-enable t)
