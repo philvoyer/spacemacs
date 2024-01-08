@@ -294,9 +294,13 @@
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
    It is called immediately after `dotspacemacs/init', before layer configuration executes."
-  ;; override theme color
-  ;; (custom-set-variables '(spacemacs-theme-custom-colors
-  ;;                          '((highlight . "#ffff00"))))
+
+  (setq-default
+    theming-modifications
+    '((spacemacs-dark
+        (highlight :background "#ffff00")
+        (region :background "#909000" :weight bold)
+        (lsp-face-highlight-textual :background "#333333" :weight normal))))
   )
 
 (defun dotspacemacs/user-config ()
