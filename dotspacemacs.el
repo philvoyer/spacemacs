@@ -54,10 +54,12 @@
        (lsp :variables lsp-headerline-breadcrumb-enable t)
        (lsp :variables lsp-headerline-breadcrumb-segments '(project file symbols))
        (lsp :variables lsp-ui-doc-enable t)
-       (lsp :variables lsp-enable-symbol-highlighting nil)
+       (lsp :variables lsp-enable-symbol-highlighting t)
        (lsp :variables lsp-lens-enable t)
        (lsp :variables lsp-ui-sideline-enable t)
+       (lsp :variables lsp-ui-sideline-delay 2000)
        (lsp :variables lsp-signature-auto-activate t)
+       (lsp :variables lsp-ui-doc-enable nil)
        lua
        markdown
        nav-flash
@@ -82,6 +84,7 @@
        sql
        syntax-checking
        swift
+       theming
        version-control
        (version-control :variables version-control-diff-tool 'diff-hl)
        (version-control :variables version-control-global-margin t)
