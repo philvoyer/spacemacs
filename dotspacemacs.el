@@ -298,7 +298,7 @@
   (setq-default
     theming-modifications
     '((spacemacs-dark
-        (highlight :background "#ffff00")
+        (highlight :background "#cccc00")
         (region :background "#606000" :weight bold)
         (lsp-face-highlight-textual :background "#333333" :weight normal))))
   )
