@@ -299,7 +299,7 @@
     theming-modifications
     '((spacemacs-dark
         (highlight :background "#ffff00")
-        (region :background "#909000" :weight bold)
+        (region :background "#606000" :weight bold)
         (lsp-face-highlight-textual :background "#333333" :weight normal))))
   )
 
