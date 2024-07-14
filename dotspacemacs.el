@@ -75,7 +75,7 @@
        (shell :variables shell-default-shell 'eshell)
        (shell :variables shell-default-position 'bottom)
        (shell :variables shell-default-width 20)
-       (shell :variables shell-default-heigh3 20)
+       (shell :variables shell-default-height 20)
        (shell :variables shell-default-full-span nil)
        spell-checking
        (spell-checking :variables spell-checking-enable-by-default nil)
