@@ -335,7 +335,7 @@
   ;; latex
   (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:$PATH" t)
 
-  ;; spell check (FR only) - OK
+  ;; spell check (FR only)
   ;; (setenv "LANG" "fr_CA.UTF-8")
   ;; (setenv "LC_ALL" "fr_CA.UTF-8")
   ;; (setq ispell-encoding "utf-8")
@@ -344,7 +344,7 @@
   ;; (setq flyspell-default-dictionary "fr_CA")
   ;; (setq ispell-process-args '("-i" "UTF-8"))
 
-  ;; spell check (EN only) - OK
+  ;; spell check (EN only)
   ;; (setenv "LANG" "en_US.UTF-8")
   ;; (setenv "LC_ALL" "en_US.UTF-8")
   ;; (setq ispell-encoding "utf-8")
