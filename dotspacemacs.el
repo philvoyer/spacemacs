@@ -79,7 +79,7 @@
        (shell :variables shell-default-full-span nil)
        spell-checking
        (spell-checking :variables spell-checking-enable-by-default nil)
-       (spell-checking :variables spell-checking-enable-auto-dictionary t)
+       (spell-checking :variables spell-checking-enable-auto-dictionary nil)
        (spell-checking :variables enable-flyspell-auto-completion t)
        sql
        syntax-checking
@@ -332,9 +332,45 @@
   ;; associate processing files to java mode
   (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
-  ;; associate .subseqnth to clojure mode
-  (add-to-list 'auto-mode-alist '("\\.subseqnth\\'" . clojure-mode))
-
   ;; latex
   (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:$PATH" t)
+
+  ;; spell check (FR only) - OK
+  ;; (setenv "LANG" "fr_CA.UTF-8")
+  ;; (setenv "LC_ALL" "fr_CA.UTF-8")
+  ;; (setq ispell-encoding "utf-8")
+  ;; (setq ispell-program-name "hunspell")
+  ;; (setq ispell-dictionary "fr_CA")
+  ;; (setq flyspell-default-dictionary "fr_CA")
+  ;; (setq ispell-process-args '("-i" "UTF-8"))
+
+  ;; spell check (EN only) - OK
+  ;; (setenv "LANG" "en_US.UTF-8")
+  ;; (setenv "LC_ALL" "en_US.UTF-8")
+  ;; (setq ispell-encoding "utf-8")
+  ;; (setq ispell-program-name "hunspell")
+  ;; (setq ispell-dictionary "en_US")
+  ;; (setq flyspell-default-dictionary "en_US")
+  ;; (setq ispell-process-args '("-i" "UTF-8"))
+
+  ;; spell check (FR+EN)
+  (setenv "LANG" "en_US.UTF-8")
+  (setenv "LC_ALL" "en_US.UTF-8")
+  (setq ispell-encoding "utf-8")
+  (setq ispell-program-name "hunspell")
+  (setq ispell-process-args '("-i" "UTF-8"))
+  (setq ispell-hunspell-dictionary-alist nil)
+  (setq ispell-local-dictionary-alist nil)
+  (setq ispell-local-dictionary-alist
+    '(("en_US,fr_CA"
+        "[[:alpha:]]"
+        "[^[:alpha:]]"
+        "[']"
+        t
+        ("-d" "en_US,fr_CA" "-i" "utf-8")
+        nil
+        utf-8)))
+  (setq ispell-dictionary "en_US,fr_CA")
+  (setq flyspell-default-dictionary "en_US,fr_CA")
+
   )
