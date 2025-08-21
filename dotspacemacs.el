@@ -352,6 +352,9 @@
   ;; associate processing files to java mode
   (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
+  ;; associate .script to clojure mode
+  (add-to-list 'auto-mode-alist '("\\.script\\'" . clojure-mode))
+
   ;; latex
   (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:$PATH" t)
 
