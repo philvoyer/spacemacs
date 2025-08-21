@@ -304,6 +304,11 @@
   "Initialization function for user code.
    It is called immediately after `dotspacemacs/init', before layer configuration executes."
 
+  ;; spell check
+  (setenv "LANG" "fr_FR.UTF-8")
+  (setenv "LC_ALL" "fr_FR.UTF-8")
+  (setq ispell-encoding "utf-8")
+
   (setq-default
     theming-modifications
     '((spacemacs-dark
