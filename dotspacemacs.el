@@ -53,13 +53,22 @@
        lsp ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
        (lsp :variables lsp-headerline-breadcrumb-enable t)
        (lsp :variables lsp-headerline-breadcrumb-segments '(project file symbols))
-       (lsp :variables lsp-ui-doc-enable t)
        (lsp :variables lsp-enable-symbol-highlighting t)
+       (lsp :variables lsp-symbol-highlighting-delay 3.0)
        (lsp :variables lsp-lens-enable t)
-       (lsp :variables lsp-ui-sideline-enable t)
-       (lsp :variables lsp-ui-sideline-delay 2000)
        (lsp :variables lsp-signature-auto-activate t)
-       (lsp :variables lsp-ui-doc-enable nil)
+       (lsp :variables lsp-ui-sideline-enable t)
+       (lsp :variables lsp-ui-sideline-show-code-actions nil)
+       (lsp :variables lsp-ui-sideline-show-hover t)
+       (lsp :variables lsp-ui-sideline-delay 2000)
+       (lsp :variables lsp-ui-doc-enable t)
+       (lsp :variables lsp-ui-doc-show-with-cursor nil)
+       (lsp :variables lsp-ui-doc-show-with-mouse nil)
+       (lsp :variables lsp-modeline-code-actions-enable t)
+       (lsp :variables lsp-modeline-diagnostics-enable t)
+       (lsp :variables lsp-completion-show-detail t)
+       (lsp :variables lsp-completion-show-kind t)
+       (lsp :variables lsp-eldoc-enable-hover t)
        lua
        markdown
        nav-flash
