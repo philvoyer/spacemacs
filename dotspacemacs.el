@@ -330,6 +330,9 @@
   ;; activate visual-line-mode for text mode (ex. .org)
   (add-hook 'text-mode-hook #'visual-line-mode)
 
+  ;; line number mode (nil, 't, 'relative, 'absolute, 'visual)
+  (setq display-line-numbers-type 'relative)
+
   ;; display time in status bar
   (display-time-mode t)
 
