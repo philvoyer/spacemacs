@@ -358,6 +358,9 @@
   ;; latex
   (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:$PATH" t)
 
+  ;; prevent conflict between "auto-highlight-symbol-mode" and "lsp-enable-symbol-highlighting" with LSP
+  (remove-hook 'prog-mode-hook 'auto-highlight-symbol-mode)
+
   ;; spell check (FR only)
   ;; (setenv "LANG" "fr_CA.UTF-8")
   ;; (setenv "LC_ALL" "fr_CA.UTF-8")
