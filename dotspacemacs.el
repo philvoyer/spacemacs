@@ -321,6 +321,9 @@
   "Configuration function for user code.
    This function is called at the very end of Spacemacs initialization after layers configuration."
 
+  ;; activate symbol like lambda
+  (global-prettify-symbols-mode t)
+
   ;; activate point in center of frame
   (spacemacs/toggle-centered-point-globally)
 
