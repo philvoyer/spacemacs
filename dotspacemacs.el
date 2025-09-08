@@ -71,6 +71,7 @@
        (lsp :variables lsp-eldoc-enable-hover t)
        lua
        markdown
+       multiple-cursors
        nav-flash
        org
        (org :variables org-adapt-indentation nil)
