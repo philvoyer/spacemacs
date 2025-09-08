@@ -95,6 +95,7 @@
        syntax-checking
        swift
        theming
+       treemacs
        version-control
        (version-control :variables version-control-diff-tool 'diff-hl)
        (version-control :variables version-control-global-margin t)
