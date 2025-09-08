@@ -218,9 +218,6 @@
     ;; maximum number of rollback slots
     dotspacemacs-max-rollback-slots 5
 
-    ;; if non nil, `helm' will try to minimize the space it uses
-    dotspacemacs-helm-resize t
-
     ;; if non nil, helm header is hidden when there is only one source
     dotspacemacs-helm-no-header nil
 
