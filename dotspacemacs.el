@@ -348,6 +348,9 @@
   ;; c indentation style
   (setq-default c-default-style "bsd")
 
+  ;; associate .jsx files to javascript mode
+  (add-to-list 'auto-mode-alist '("\\.jsx\\'" . javascript-mode))
+
   ;; associate processing files to java mode
   (add-to-list 'auto-mode-alist '("\\.pde\\'" . java-mode))
 
