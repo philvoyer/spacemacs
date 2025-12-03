@@ -289,7 +289,7 @@
     dotspacemacs-persistent-server nil
 
     ;; list of search tool executable names
-    dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
+    dotspacemacs-search-tools '("rg" "ag" "pt" "ack" "grep")
 
     ;; default package repository
     dotspacemacs-default-package-repository nil
