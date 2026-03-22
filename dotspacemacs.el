@@ -316,7 +316,7 @@
     '((spacemacs-dark
         (highlight :background "#909000")
         (region :background "#606000" :weight bold)
-        (lsp-face-highlight-textual :background "#333333" :weight normal))))
+        (lsp-face-highlight-textual :background "MediumPurple4" :weight bold))))
   )
 
 (defun dotspacemacs/user-config ()
